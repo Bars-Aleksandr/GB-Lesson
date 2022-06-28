@@ -1,0 +1,15 @@
+E:\data\programming\geekbrains\lessonsProgramming C#\lesson1\exampleHelloWorld\bin\Debug\net6.0\exampleHelloWorld.exe
+E:\data\programming\geekbrains\lessonsProgramming C#\lesson1\exampleHelloWorld\bin\Debug\net6.0\exampleHelloWorld.deps.json
+E:\data\programming\geekbrains\lessonsProgramming C#\lesson1\exampleHelloWorld\bin\Debug\net6.0\exampleHelloWorld.runtimeconfig.json
+E:\data\programming\geekbrains\lessonsProgramming C#\lesson1\exampleHelloWorld\bin\Debug\net6.0\exampleHelloWorld.dll
+E:\data\programming\geekbrains\lessonsProgramming C#\lesson1\exampleHelloWorld\bin\Debug\net6.0\exampleHelloWorld.pdb
+E:\data\programming\geekbrains\lessonsProgramming C#\lesson1\exampleHelloWorld\obj\Debug\net6.0\exampleHelloWorld.csproj.AssemblyReference.cache
+E:\data\programming\geekbrains\lessonsProgramming C#\lesson1\exampleHelloWorld\obj\Debug\net6.0\exampleHelloWorld.GeneratedMSBuildEditorConfig.editorconfig
+E:\data\programming\geekbrains\lessonsProgramming C#\lesson1\exampleHelloWorld\obj\Debug\net6.0\exampleHelloWorld.AssemblyInfoInputs.cache
+E:\data\programming\geekbrains\lessonsProgramming C#\lesson1\exampleHelloWorld\obj\Debug\net6.0\exampleHelloWorld.AssemblyInfo.cs
+E:\data\programming\geekbrains\lessonsProgramming C#\lesson1\exampleHelloWorld\obj\Debug\net6.0\exampleHelloWorld.csproj.CoreCompileInputs.cache
+E:\data\programming\geekbrains\lessonsProgramming C#\lesson1\exampleHelloWorld\obj\Debug\net6.0\exampleHelloWorld.dll
+E:\data\programming\geekbrains\lessonsProgramming C#\lesson1\exampleHelloWorld\obj\Debug\net6.0\refint\exampleHelloWorld.dll
+E:\data\programming\geekbrains\lessonsProgramming C#\lesson1\exampleHelloWorld\obj\Debug\net6.0\exampleHelloWorld.pdb
+E:\data\programming\geekbrains\lessonsProgramming C#\lesson1\exampleHelloWorld\obj\Debug\net6.0\exampleHelloWorld.genruntimeconfig.cache
+E:\data\programming\geekbrains\lessonsProgramming C#\lesson1\exampleHelloWorld\obj\Debug\net6.0\ref\exampleHelloWorld.dll
