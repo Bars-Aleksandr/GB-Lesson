@@ -8,7 +8,7 @@ int b = int.Parse(Console.ReadLine());
 Console.Write("Введите третье число и нажмите клавишу Enter: ");
 int d = int.Parse(Console.ReadLine());
 int max;
-if (a>b)
+if (a > b)
 {
    max = a;
 }
@@ -16,9 +16,9 @@ else
 {
     max = b;
 }
-if (d>max)
+if (d > max)
 {
-    max=d;
+    max = d;
 }
 
-Console.WriteLine($"Максимальное число { max } ");
+Console.WriteLine($"Максимальное число {max} ");
