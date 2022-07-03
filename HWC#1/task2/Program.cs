@@ -3,13 +3,22 @@ int a = int.Parse(Console.ReadLine());
 
 Console.Write("Введите второе число и нажмите клавишу Enter: ");
 int b = int.Parse(Console.ReadLine());
-int max, min;
-if (a>b)
+if (a == b) 
 {
-   max = a; min = b ;
+    Console.WriteLine($"Число {a} ,равно числу {b}");
 }
 else
 {
-    max = b; min = a;
+    int max, min;
+    if (a > b)
+    {
+        max = a; 
+        min = b;
+    } 
+    else
+    {
+        max = b;
+        min = a;
+    }
+Console.WriteLine($"Большее число {max} ,а меньшее число  {min}");
 }
-Console.WriteLine($"Большее число { max } ,а меньшее число  { min }");
