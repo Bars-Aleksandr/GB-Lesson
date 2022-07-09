@@ -25,5 +25,5 @@ if (B <= 0)
 }
 else
 {
-    Console.WriteLine($"Число {A} при возведении в натуральную степень {B} равно {Exponent(A, B)}");
+    Console.WriteLine($"{A}^{B} = {Exponent(A, B)}");
 }
