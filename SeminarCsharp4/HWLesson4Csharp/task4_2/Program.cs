@@ -29,7 +29,7 @@ string stringDigit = Console.ReadLine();
 int lengthDigit = numberDigit(stringDigit);
 
 int IntDigit = int.Parse(stringDigit);
-int OriginalNumber = IntDigit;
+int originalNumber = IntDigit;
 int sumDigit = 0;
 
 for (int i = 1; i <= lengthDigit; i++)
@@ -37,4 +37,4 @@ for (int i = 1; i <= lengthDigit; i++)
     sumDigit = sumDigit + lastDigit(IntDigit);
     IntDigit = modifNumber(IntDigit);
 }
-Console.WriteLine(sumDigit);
+Console.WriteLine($"{originalNumber} --> {sumDigit}");
