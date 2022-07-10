@@ -5,12 +5,26 @@
 int[] arrayRND(int length)
 {
     int[] arrRND = new int[length];
-    for (int i = 0; i <= length; i++)
+    for (int i = 0; i < length; i++)
     {
-        arrRND[i] = new Random().Next();
+        arrRND[i] = new Random().Next(0, 100);
     }
+
     return arrRND;
 }
 
-int lengthArray = 7;
-//arrayRND(lengthArray);
+//метод для вывода массива на экран
+void printArray(int[] arrayIn)
+{
+    int lengthArr = arrayIn.Length;
+    for (int i = 0; i < lengthArr; i++)
+    {
+        Console.Write($"{arrayIn[i]} ");
+    }
+}
+
+// тело основной программы
+int lengthArray = 8;
+int[] myArray = arrayRND(lengthArray);
+
+printArray(myArray);
