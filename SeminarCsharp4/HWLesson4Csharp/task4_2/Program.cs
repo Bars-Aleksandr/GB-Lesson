@@ -2,21 +2,39 @@
 //452 -> 11
 //82 -> 10
 //9012 -> 12
+
+
+//метод определения числа цифр в числе
 int numberDigit(string stringVar)
 {
     string numDigStr = stringVar.ToString();
     return numDigStr.Length;
 }
 
-//int SeparationDigit(int initVar)
-//{
-// A = A / 10;
-//}
+// метод отделения последней цифры числа
+int lastDigit(int initVar)
+{
+    int lastDigit = initVar % 10;
+    return lastDigit;
+}
+
+//метод уменьшения количества цифр числа на последнюю
+int modifNumber(int num)
+{
+    return num / 10;
+}
+
 Console.Write("Введите любое положительное целое число: ");
 string stringDigit = Console.ReadLine();
-int size = numberDigit(stringDigit);
+int lengthDigit = numberDigit(stringDigit);
 
-//string numDigStr = stringVar.ToString();
-//int size = numDigStr.Length;
+int IntDigit = int.Parse(stringDigit);
+int OriginalNumber = IntDigit;
+int sumDigit = 0;
 
-Console.WriteLine(size);
+for (int i = 1; i <= lengthDigit; i++)
+{
+    sumDigit = sumDigit + lastDigit(IntDigit);
+    IntDigit = modifNumber(IntDigit);
+}
+Console.WriteLine(sumDigit);
