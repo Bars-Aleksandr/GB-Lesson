@@ -1,2 +1,3 @@
-﻿// See https://aka.ms/new-console-template for more information
-Console.WriteLine("Hello, World!");
+﻿// Задайте массив вещественных чисел.
+// Найдите разницу между максимальным и минимальным элементов массива.
+// ПРИМЕР: [3, 7, 22, 2, 78] -> 76
