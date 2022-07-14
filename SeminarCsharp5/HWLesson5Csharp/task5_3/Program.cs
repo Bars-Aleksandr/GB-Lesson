@@ -47,6 +47,6 @@ Console.WriteLine();
 
 //MinMax = SearchMinMax(sourceArray);
 
-double result = SearchMinMax(sourceArray)[1] - SearchMinMax(sourceArray)[0];
+//double result = SearchMinMax(sourceArray)[1] - SearchMinMax(sourceArray)[0];
 
-Console.WriteLine($" --> {result}.");
+Console.WriteLine($" --> {SearchMinMax(sourceArray)[1] - SearchMinMax(sourceArray)[0]}.");
