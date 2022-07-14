@@ -36,17 +36,8 @@ void printArray(double[] arrayIn)
 
 // тело основной программы
 
-double[] sourceArray = { 4, 6, 4, 67 };
+double[] sourceArray = { 3, 7, 22, 2, 78 };
 
 printArray(sourceArray);
-
-printArray(SearchMinMax(sourceArray));
-Console.WriteLine();
-
-//double[] MinMax = new double[2];
-
-//MinMax = SearchMinMax(sourceArray);
-
-//double result = SearchMinMax(sourceArray)[1] - SearchMinMax(sourceArray)[0];
 
 Console.WriteLine($" --> {SearchMinMax(sourceArray)[1] - SearchMinMax(sourceArray)[0]}.");
