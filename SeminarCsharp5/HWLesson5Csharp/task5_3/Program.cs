@@ -2,6 +2,18 @@
 // Найдите разницу между максимальным и минимальным элементов массива.
 // ПРИМЕР: [3, 7, 22, 2, 78] -> 76
 
+//метод создающий массив заданой длинны случайными числами
+double[] arrayRND(int length)
+{
+    double[] arrRND = new double[length];
+    for (int i = 0; i < length; i++)
+    {
+        arrRND[i] = new Random().Next(-100, 100);
+    }
+
+    return arrRND;
+}
+
 //метод находнения min-элемент одномерного массива.
 double[] SearchMinMax(double[] baseArray)
 {
@@ -36,7 +48,10 @@ void printArray(double[] arrayIn)
 
 // тело основной программы
 
-double[] sourceArray = { 3, 7, 22, 2, 78 };
+Console.Write("Введите длину массива ");
+int lengthMas = int.Parse(Console.ReadLine());
+
+double[] sourceArray = arrayRND(lengthMas);
 
 printArray(sourceArray);
 
