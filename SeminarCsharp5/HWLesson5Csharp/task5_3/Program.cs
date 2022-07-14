@@ -43,9 +43,10 @@ printArray(sourceArray);
 printArray(SearchMinMax(sourceArray));
 Console.WriteLine();
 
-double[] MinMax = new double[2];
+//double[] MinMax = new double[2];
 
-MinMax = SearchMinMax(sourceArray);
+//MinMax = SearchMinMax(sourceArray);
 
-//int result = SearchMinMax[1] - SearchMinMax[0];
-Console.WriteLine($" --> {MinMax[1] - MinMax[0]}.");
+double result = SearchMinMax(sourceArray)[1] - SearchMinMax(sourceArray)[0];
+
+Console.WriteLine($" --> {result}.");
