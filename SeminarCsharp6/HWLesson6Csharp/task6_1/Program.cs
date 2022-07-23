@@ -15,6 +15,4 @@ for (int i = 0; i < length; i++)
         countSpace +=1;
     
 }
-    Console.WriteLine($"Число отрицательных элементов равно {countMinus}");
-    Console.WriteLine($"Число пробелов равно {countSpace}");
-    Console.WriteLine($"Число положительных элементов равно {(countSpace+1)-countMinus}");
+Console.WriteLine($"Число положительных элементов равно {(countSpace+1)-countMinus}");
