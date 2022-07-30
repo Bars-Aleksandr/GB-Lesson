@@ -3,16 +3,27 @@
 //1, -7, 567, 89, 223-> 3
 Console.WriteLine("Введите последовательность чисел");
 string num = Console.ReadLine();
-int length = num.Length;
-int countMinus = 0;
-int countSpace = 0;
-for (int i = 0; i < length; i++)
-{
-    if (num[i] == '-')  
-        countMinus +=1;
 
-    if (num[i] == ' ')  
-        countSpace +=1;
-    
+int countPlus = 0;
+
+string[] arrNums = num.Split(',');
+for (int i = 0; i < arrNums.Length; i++)
+{
+    double element = double.Parse(arrNums[i]);
+    if (element > 0)  
+        countPlus +=1;
+      
 }
-Console.WriteLine($"Число положительных элементов равно {(countSpace+1)-countMinus}");
+
+//int length = num.Length;
+//int countMinus = 0;
+//int countSpace = 0;
+//for (int i = 0; i < length; i++)
+//{
+ //   if (num[i] == '-')  
+  //      countMinus +=1;
+
+  //  if (num[i] == ' ')  
+  //      countSpace +=1;
+    
+Console.WriteLine($"Число положительных элементов равно {countPlus}");
