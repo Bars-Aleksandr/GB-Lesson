@@ -19,50 +19,58 @@
     {
        int n = new Random().Next(1, 10);
        int m = new Random().Next(1, 10);
-       //int n = 3;
-       //int m = 5;
-        int[,] arrRND = new int[n, m];
+       
+       int[,] arrRND = new int[n, m];
 
         for (int i = 0; i < n; i++)
-        {
-        for (int j = 0; j < m; j++)
-        {
-            arrRND[i, j] = new Random().Next(-10, 10);
-        }
-        }
+            {
+            for (int j = 0; j < m; j++)
+                {
+                    arrRND[i, j] = new Random().Next(-10, 10);
+                }
+            }
 
         return arrRND;
-        }
+    }
 
-        //вывод двумерного массива на экран
-        void PrintArray(int[,] arrayIn)
+    //вывод двумерного массива на экран
+    void PrintArray(int[,] arrayIn)
+    {
+        for (int i = 0; i < arrayIn.GetLength(0); i++)
         {
-            for (int i = 0; i < arrayIn.GetLength(0); i++)
+            for (int j = 0; j < arrayIn.GetLength(1); j++)
             {
-                for (int j = 0; j < arrayIn.GetLength(1); j++)
-                {
-                    Console.Write($"{arrayIn[i, j]} ");
-                }
-
-                Console.WriteLine();
+                Console.Write($"{arrayIn[i, j]} ");
             }
+
+            Console.WriteLine();
         }
+    }
 
-        int[,] baseArray = ArrayRND();
-        PrintArray(baseArray);
-
-Console.WriteLine();
-
-    for (int i = 0; i < baseArray.GetLength(0); i++)
+    int[,] SortingArray(int[,] arr)
+    {
+        for (int i = 0; i < arr.GetLength(0); i++)
             {
-                for (int j = 1; j < baseArray.GetLength(1); j++)
+                for (int j = 1; j < arr.GetLength(1); j++)
                 {
-                    for (int jj = 0 ; jj < baseArray.GetLength(1)-j; jj++)
+                    for (int jj = 0 ; jj < arr.GetLength(1)-j; jj++)
                     {
-                        if (baseArray[i,jj] < baseArray[i,jj+1])
-                            (baseArray[i,jj], baseArray[i,jj+1]) = (baseArray[i,jj+1], baseArray[i,jj]);
+                        if (arr[i,jj] < arr[i,jj+1])
+                            (arr[i,jj], arr[i,jj+1]) = (arr[i,jj+1], arr[i,jj]);
                     }   
                 }
 
             }   
+        return arr;    
+    }
+
+
+int[,] baseArray = ArrayRND();
+
+Console.WriteLine("Исходный сгенерированный массив");
 PrintArray(baseArray);
+
+Console.WriteLine();
+
+Console.WriteLine("Отсортированный массив");
+PrintArray(SortingArray(baseArray));
