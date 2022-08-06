@@ -23,7 +23,7 @@
         {
             for (int j = 0; j < arrayIn.GetLength(1); j++)
             {
-                Console.Write($"{arrayIn[i, j]} ");
+                Console.Write($"{arrayIn[i, j], 3} ");
             }
 
             Console.WriteLine();
