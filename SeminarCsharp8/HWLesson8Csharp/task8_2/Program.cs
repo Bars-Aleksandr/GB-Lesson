@@ -16,8 +16,8 @@
 */
     int[,] ArrayRND()
     {
-       int n = new Random().Next(1, 10);
-       int m = new Random().Next(2, 9);
+       int n = 5;
+       int m = 6;
        
        int[,] arrRND = new int[n, m];
 
@@ -25,7 +25,7 @@
             {
             for (int j = 0; j < m; j++)
                 {
-                    arrRND[i, j] = new Random().Next(-10, 10);
+                    arrRND[i, j] = new Random().Next(0, 10);
                 }
             }
 
